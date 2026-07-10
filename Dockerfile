@@ -15,7 +15,7 @@ CMD ["npm", "run", "dev"]
 # --- Builder Stage ---
 # This stage builds the frontend assets for production.
 FROM base AS builder
-RUN npm ci
+RUN npm install
 COPY . .
 RUN npm run build
 
@@ -28,7 +28,7 @@ ENV PORT=3000
 
 # Install only production dependencies for a lighter image
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm install --omit=dev
 
 # Copy built assets and the custom Express server from the builder stage
 COPY --from=builder /app/dist ./dist
