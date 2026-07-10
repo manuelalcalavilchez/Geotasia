@@ -1,7 +1,7 @@
 import { ProjectConfig } from './types';
 
 export const DEFAULT_CONFIG: ProjectConfig = {
-  kDriveUrl: 'https://kdrop.kdrive.infomaniak.com/web-recepcion-geotasalia',
+  kDriveUrl: 'https://kdrive.infomaniak.com/app/collaborate/2817260/c2b3831c-6495-4118-bad0-ac3a1d762559',
   externalGeovisorUrl: 'https://ovc.catastro.meh.es/',
   externalRutasUrl: 'https://www.google.com/maps',
   externalNotasSimplesUrl: 'https://registradores.org',
@@ -13,6 +13,7 @@ export const DEFAULT_CONFIG: ProjectConfig = {
   rgpdEmail: 'jorge.martinez@geotasalia.es',
   rgpdDpd: 'gestion@geotasalia.es',
   customLogoUrl: '',
+  theme: 'navy-gold',
 };
 
 export const CATASTRAL_SAMPLES = [

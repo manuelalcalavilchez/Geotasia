@@ -11,6 +11,7 @@ export interface ProjectConfig {
   rgpdEmail?: string;
   rgpdDpd?: string;
   customLogoUrl?: string;
+  theme?: 'navy-gold' | 'emerald-warm' | 'cyan-steel' | 'minimal-light';
 }
 
 export type ServiceType = 

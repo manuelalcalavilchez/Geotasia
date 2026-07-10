@@ -5,11 +5,75 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
+
+  --color-theme-bg-root: var(--theme-bg-root);
+  --color-theme-bg-nav: var(--theme-bg-nav);
+  --color-theme-bg-card: var(--theme-bg-card);
+  --color-theme-border-card: var(--theme-border-card);
+  --color-theme-text: var(--theme-text);
+  --color-theme-text-muted: var(--theme-text-muted);
+  --color-theme-accent: var(--theme-accent);
+  --color-theme-accent-hover: var(--theme-accent-hover);
+  --color-theme-accent-bg: var(--theme-accent-bg);
 }
 
 body {
-  background-color: #040814;
-  color: #e2e8f0;
+  background-color: var(--theme-bg-root, #040814);
+  color: var(--theme-text, #e2e8f0);
   font-family: var(--font-sans);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
+
+/* 1. Gabinete Clásico (navy-gold) */
+.theme-navy-gold {
+  --theme-bg-root: #050b1e;
+  --theme-bg-nav: rgba(10, 20, 48, 0.95);
+  --theme-bg-card: #0d1527;
+  --theme-border-card: rgba(250, 204, 21, 0.35); /* Bright glowing gold/yellow */
+  --theme-text: #f8fafc;
+  --theme-text-muted: #cbd5e1;
+  --theme-accent: #facc15; /* Saturated gold */
+  --theme-accent-hover: #eab308;
+  --theme-accent-bg: rgba(250, 204, 21, 0.15);
+}
+
+/* 2. Agrícola Tradicional (emerald-warm) */
+.theme-emerald-warm {
+  --theme-bg-root: #021a11;
+  --theme-bg-nav: rgba(4, 38, 26, 0.95);
+  --theme-bg-card: #042a1d;
+  --theme-border-card: rgba(16, 185, 129, 0.35); /* Saturated emerald glow */
+  --theme-text: #fefcf8; /* Warm vintage ivory/linen */
+  --theme-text-muted: #a7f3d0; /* emerald-200 */
+  --theme-accent: #f97316; /* Saturated rural orange/terracotta */
+  --theme-accent-hover: #ea580c;
+  --theme-accent-bg: rgba(249, 115, 22, 0.15);
+}
+
+/* 3. Ingeniería y Catastro (cyan-steel) */
+.theme-cyan-steel {
+  --theme-bg-root: #080b11;
+  --theme-bg-nav: rgba(17, 24, 39, 0.95);
+  --theme-bg-card: #111827;
+  --theme-border-card: rgba(6, 182, 212, 0.4); /* Glowing cyan wireframe */
+  --theme-text: #f1f5f9;
+  --theme-text-muted: #94a3b8;
+  --theme-accent: #00f2ff; /* Electric neon cyan */
+  --theme-accent-hover: #0891b2;
+  --theme-accent-bg: rgba(6, 182, 212, 0.18);
+}
+
+/* 4. Modo Claro Técnico (minimal-light) */
+.theme-minimal-light {
+  --theme-bg-root: #f1f5f9; /* Saturated light slate background */
+  --theme-bg-nav: rgba(255, 255, 255, 0.96);
+  --theme-bg-card: #ffffff; /* Saturated crisp white cards */
+  --theme-border-card: rgba(148, 163, 184, 0.45); /* Saturated slate border line */
+  --theme-text: #0f172a; /* Deep dark slate text */
+  --theme-text-muted: #475569;
+  --theme-accent: #2563eb; /* Technical Royal Blue accent */
+  --theme-accent-hover: #1d4ed8;
+  --theme-accent-bg: rgba(37, 99, 235, 0.1);
+}
+
 

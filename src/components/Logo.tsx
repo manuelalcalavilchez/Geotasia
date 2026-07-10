@@ -64,11 +64,9 @@ export default function Logo({ className = '', size = 'md', showText = true, cus
           {/* Gold Metallic Gradients */}
           <defs>
             <linearGradient id="goldGradient" x1="10" y1="12" x2="92" y2="88" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stopColor="#F9F2CE" />
-              <stop offset="25%" stopColor="#E5C173" />
-              <stop offset="50%" stopColor="#C59F43" />
-              <stop offset="75%" stopColor="#B28C2F" />
-              <stop offset="100%" stopColor="#ECD396" />
+              <stop offset="0%" stopColor="var(--theme-accent, #F9F2CE)" />
+              <stop offset="50%" stopColor="var(--theme-accent, #C59F43)" />
+              <stop offset="100%" stopColor="var(--theme-accent, #ECD396)" />
             </linearGradient>
           </defs>
         </svg>
@@ -79,7 +77,7 @@ export default function Logo({ className = '', size = 'md', showText = true, cus
           <h1 className={`font-sans tracking-[0.25em] font-light text-white uppercase leading-none ${dimensions.textSize}`}>
             GEOTASALIA
           </h1>
-          <p className={`mt-2 font-mono tracking-[0.4em] text-[#D4AF37] uppercase opacity-90 ${dimensions.subSize}`}>
+          <p className={`mt-2 font-mono tracking-[0.4em] text-theme-accent uppercase opacity-90 transition-colors duration-300 ${dimensions.subSize}`}>
             CULTIVATING VALUE
           </p>
         </div>

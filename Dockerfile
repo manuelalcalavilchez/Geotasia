@@ -26,9 +26,9 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3000
 
-# Copy node_modules from builder to avoid reinstall issues
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
+# Install only production dependencies for a lighter image
+COPY package*.json ./
+RUN npm install --omit=dev
 
 # Copy built assets and the custom Express server from the builder stage
 COPY --from=builder /app/dist ./dist
@@ -38,4 +38,4 @@ COPY --from=builder /app/server.js ./server.js
 EXPOSE 3000
 
 # Start the web server
-CMD ["node", "server.js"]
+CMD ["npm", "start"]
