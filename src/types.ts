@@ -11,7 +11,7 @@ export interface ProjectConfig {
   rgpdEmail?: string;
   rgpdDpd?: string;
   customLogoUrl?: string;
-  theme?: 'navy-gold' | 'emerald-warm' | 'cyan-steel' | 'minimal-light';
+  theme?: 'navy-gold' | 'emerald-warm' | 'cyan-steel' | 'minimal-light' | 'minimalista' | 'flat' | 'material' | 'esqueumorfica' | 'retro' | 'brutalista' | 'neumorfismo' | 'glassmorphism' | 'dark-mode' | 'cyberpunk' | 'organica' | 'editorial' | 'abstracta' | 'geometrica' | '3d';
 }
 
 export type ServiceType = 

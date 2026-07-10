@@ -162,8 +162,8 @@ export default function SettingsModal({ isOpen, onClose, config, onSave }: Setti
             <Palette size={16} /> Estética y Colores del Portal
           </h3>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {/* Theme Card 1 */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            {/* Theme Card 1 - navy-gold */}
             <button
               type="button"
               onClick={() => handleChange('theme', 'navy-gold')}
@@ -174,18 +174,18 @@ export default function SettingsModal({ isOpen, onClose, config, onSave }: Setti
               }`}
             >
               <div className="flex items-center justify-between mb-1">
-                <span className="text-[11px] font-bold text-white">Gabinete Clásico</span>
-                <span className="h-2 w-2 rounded-full bg-yellow-500"></span>
+                <span className="text-[11px] font-bold text-white truncate">Gabinete Oficial</span>
+                <span className="h-2 w-2 rounded-full bg-yellow-500 shrink-0"></span>
               </div>
               <div className="flex gap-1">
-                <span className="h-3 w-3 rounded-sm bg-[#040814]"></span>
-                <span className="h-3 w-3 rounded-sm bg-[#0b1329]"></span>
-                <span className="h-3 w-3 rounded-sm bg-[#eab308]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#050b1e]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#0d1527]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#facc15]"></span>
               </div>
-              <p className="text-[9px] text-gray-400 mt-1.5 font-sans">Slate y oro elegante corporativo.</p>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Slate y oro elegante corporativo.</p>
             </button>
 
-            {/* Theme Card 2 */}
+            {/* Theme Card 2 - emerald-warm */}
             <button
               type="button"
               onClick={() => handleChange('theme', 'emerald-warm')}
@@ -196,18 +196,18 @@ export default function SettingsModal({ isOpen, onClose, config, onSave }: Setti
               }`}
             >
               <div className="flex items-center justify-between mb-1">
-                <span className="text-[11px] font-bold text-white">Rústico Agrícola</span>
-                <span className="h-2 w-2 rounded-full bg-emerald-500"></span>
+                <span className="text-[11px] font-bold text-white truncate">Rústico Agrícola</span>
+                <span className="h-2 w-2 rounded-full bg-emerald-500 shrink-0"></span>
               </div>
               <div className="flex gap-1">
-                <span className="h-3 w-3 rounded-sm bg-[#03140f]"></span>
-                <span className="h-3 w-3 rounded-sm bg-[#072a20]"></span>
-                <span className="h-3 w-3 rounded-sm bg-[#fbbf24]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#021a11]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#042a1d]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#f97316]"></span>
               </div>
-              <p className="text-[9px] text-gray-400 mt-1.5 font-sans">Verde monte y ámbar tradicional.</p>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Verde monte y ámbar tradicional.</p>
             </button>
 
-            {/* Theme Card 3 */}
+            {/* Theme Card 3 - cyan-steel */}
             <button
               type="button"
               onClick={() => handleChange('theme', 'cyan-steel')}
@@ -218,37 +218,367 @@ export default function SettingsModal({ isOpen, onClose, config, onSave }: Setti
               }`}
             >
               <div className="flex items-center justify-between mb-1">
-                <span className="text-[11px] font-bold text-white">Soporte Técnico</span>
-                <span className="h-2 w-2 rounded-full bg-cyan-400"></span>
+                <span className="text-[11px] font-bold text-white truncate">Catastro Técnico</span>
+                <span className="h-2 w-2 rounded-full bg-cyan-400 shrink-0"></span>
               </div>
               <div className="flex gap-1">
-                <span className="h-3 w-3 rounded-sm bg-[#0b0f19]"></span>
-                <span className="h-3 w-3 rounded-sm bg-[#16222f]"></span>
-                <span className="h-3 w-3 rounded-sm bg-[#22d3ee]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#080b11]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#111827]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#00f2ff]"></span>
               </div>
-              <p className="text-[9px] text-gray-400 mt-1.5 font-sans">Cian y acero de alta tecnología.</p>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Cian y acero de alta tecnología.</p>
             </button>
 
-            {/* Theme Card 4 */}
+            {/* Theme Card 4 - minimal-light */}
             <button
               type="button"
               onClick={() => handleChange('theme', 'minimal-light')}
               className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
                 formData.theme === 'minimal-light'
-                  ? 'border-amber-600 bg-amber-500/5'
+                  ? 'border-blue-500 bg-blue-500/5'
                   : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
               }`}
             >
               <div className="flex items-center justify-between mb-1">
-                <span className="text-[11px] font-bold text-slate-200">Modo Claro</span>
-                <span className="h-2 w-2 rounded-full bg-amber-600"></span>
+                <span className="text-[11px] font-bold text-white truncate">Claro Técnico</span>
+                <span className="h-2 w-2 rounded-full bg-blue-500 shrink-0"></span>
               </div>
               <div className="flex gap-1">
-                <span className="h-3 w-3 rounded-sm bg-[#f8fafc]"></span>
-                <span className="h-3 w-3 rounded-sm bg-white border border-slate-200"></span>
-                <span className="h-3 w-3 rounded-sm bg-[#ca8a04]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#f1f5f9] border border-gray-700"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#ffffff] border border-gray-700"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#2563eb]"></span>
               </div>
-              <p className="text-[9px] text-gray-400 mt-1.5 font-sans">Limpio y claro para pleno día.</p>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Limpio y claro para pleno día.</p>
+            </button>
+
+            {/* Theme Card 5 - minimalista */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'minimalista')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'minimalista'
+                  ? 'border-white bg-white/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Minimalista</span>
+                <span className="h-2 w-2 rounded-full bg-gray-400 shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#fafafa] border border-gray-700"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#ffffff] border border-gray-700"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#171717] border border-gray-700"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Ausencia de ruido, limpieza pura.</p>
+            </button>
+
+            {/* Theme Card 6 - flat */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'flat')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'flat'
+                  ? 'border-sky-400 bg-sky-400/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Flat design</span>
+                <span className="h-2 w-2 rounded-full bg-sky-500 shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#e0f2fe]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#ffffff]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#0284c7]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Colores planos, sin degradados.</p>
+            </button>
+
+            {/* Theme Card 7 - material */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'material')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'material'
+                  ? 'border-purple-500 bg-purple-500/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Material design</span>
+                <span className="h-2 w-2 rounded-full bg-[#6200ee] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#f5f5f5]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#ffffff]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#6200ee]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Alineado a guías de Google.</p>
+            </button>
+
+            {/* Theme Card 8 - esqueumorfica */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'esqueumorfica')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'esqueumorfica'
+                  ? 'border-amber-700 bg-amber-700/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Esqueumórfica</span>
+                <span className="h-2 w-2 rounded-full bg-[#8c2f00] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#f4efe6]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#eae0d5]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#8c2f00]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Madera, pergamino y texturas.</p>
+            </button>
+
+            {/* Theme Card 9 - retro */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'retro')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'retro'
+                  ? 'border-rose-600 bg-rose-600/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Retro / vintage</span>
+                <span className="h-2 w-2 rounded-full bg-[#a63a50] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#faf6ee]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#f0ebd8]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#a63a50]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Crema nostálgico e imprenta.</p>
+            </button>
+
+            {/* Theme Card 10 - brutalista */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'brutalista')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'brutalista'
+                  ? 'border-red-500 bg-red-500/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Brutalista</span>
+                <span className="h-2 w-2 rounded-full bg-[#ff0055] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#ffffff] border border-black"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#fef08a] border border-black"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#ff0055]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Bordes gruesos y contraste rudo.</p>
+            </button>
+
+            {/* Theme Card 11 - neumorfismo */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'neumorfismo')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'neumorfismo'
+                  ? 'border-gray-400 bg-gray-400/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Neumorfismo</span>
+                <span className="h-2 w-2 rounded-full bg-[#4a5568] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#e0e0e0]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#e0e0e0] border border-gray-300"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#4a5568]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Relieves extruidos y sombras soft.</p>
+            </button>
+
+            {/* Theme Card 12 - glassmorphism */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'glassmorphism')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'glassmorphism'
+                  ? 'border-sky-400 bg-sky-400/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Glassmorphism</span>
+                <span className="h-2 w-2 rounded-full bg-[#38bdf8] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#020617]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#0f172a]/50 border border-gray-700"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#38bdf8]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Cristal traslúcido y desenfoques.</p>
+            </button>
+
+            {/* Theme Card 13 - dark-mode */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'dark-mode')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'dark-mode'
+                  ? 'border-emerald-500 bg-emerald-500/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Dark mode</span>
+                <span className="h-2 w-2 rounded-full bg-[#10b981] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#090d16]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#151c2c]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#10b981]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Oscuro total con verde técnico.</p>
+            </button>
+
+            {/* Theme Card 14 - cyberpunk */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'cyberpunk')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'cyberpunk'
+                  ? 'border-pink-500 bg-pink-500/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Futurista / cyberpunk</span>
+                <span className="h-2 w-2 rounded-full bg-yellow-400 shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#03001e]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#120024]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#00f6ff]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Neón electrizante de ciencia ficción.</p>
+            </button>
+
+            {/* Theme Card 15 - organica */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'organica')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'organica'
+                  ? 'border-lime-700 bg-lime-700/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Orgánica / natural</span>
+                <span className="h-2 w-2 rounded-full bg-[#606c38] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#eef1ed]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#ffffff]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#606c38]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Tierra, oliva y musgo natural.</p>
+            </button>
+
+            {/* Theme Card 16 - editorial */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'editorial')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'editorial'
+                  ? 'border-red-900 bg-red-900/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Editorial</span>
+                <span className="h-2 w-2 rounded-full bg-[#722f37] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#fdfbf7]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#ffffff]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#722f37]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Elegancia periodística y vino burdeos.</p>
+            </button>
+
+            {/* Theme Card 17 - abstracta */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'abstracta')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'abstracta'
+                  ? 'border-indigo-500 bg-indigo-500/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Abstracta</span>
+                <span className="h-2 w-2 rounded-full bg-[#f97316] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#4f46e5]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#ffffff]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#f97316]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Bloques artísticos y contraste coral.</p>
+            </button>
+
+            {/* Theme Card 18 - geometrica */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', 'geometrica')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === 'geometrica'
+                  ? 'border-orange-500 bg-orange-500/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">Geométrica</span>
+                <span className="h-2 w-2 rounded-full bg-orange-500 shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#0f172a]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#1e293b]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#f97316]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Retícula de líneas y coordenadas exactas.</p>
+            </button>
+
+            {/* Theme Card 19 - 3d */}
+            <button
+              type="button"
+              onClick={() => handleChange('theme', '3d')}
+              className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                formData.theme === '3d'
+                  ? 'border-pink-600 bg-pink-600/5'
+                  : 'border-gray-800 hover:border-gray-700 bg-gray-950/20'
+              }`}
+            >
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-[11px] font-bold text-white truncate">3D</span>
+                <span className="h-2 w-2 rounded-full bg-[#ff00a0] shrink-0"></span>
+              </div>
+              <div className="flex gap-1">
+                <span className="h-3 w-3 rounded-sm bg-[#1e1e38]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#2a2b4d]"></span>
+                <span className="h-3 w-3 rounded-sm bg-[#ff00a0]"></span>
+              </div>
+              <p className="text-[9px] text-gray-400 mt-1.5 font-sans leading-tight">Altorelieve cromático y profundidad virtual.</p>
             </button>
           </div>
 
