@@ -1366,7 +1366,7 @@ export default function App() {
               <button
                 type="submit"
                 disabled={formSubmitted}
-                className="w-full py-3 bg-theme-accent hover:bg-theme-accent-hover text-slate-950 text-xs font-bold uppercase tracking-wider rounded-xl shadow-lg transition-all flex items-center justify-center gap-2"
+                className="w-full py-3 bg-theme-accent hover:bg-theme-accent-hover text-theme-text-on-accent text-xs font-bold uppercase tracking-wider rounded-xl shadow-lg transition-all flex items-center justify-center gap-2"
               >
                 {formSubmitted ? (
                   <>
@@ -1481,7 +1481,7 @@ export default function App() {
 
               <button
                 type="submit"
-                className="w-full py-2.5 bg-theme-accent hover:bg-theme-accent-hover text-slate-950 text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-md animate-none"
+                className="w-full py-2.5 bg-theme-accent hover:bg-theme-accent-hover text-theme-text-on-accent text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-md animate-none"
               >
                 Acceder a la Plataforma
               </button>
