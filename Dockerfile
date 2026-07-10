@@ -38,4 +38,4 @@ COPY --from=builder /app/server.js ./server.js
 EXPOSE 3000
 
 # Start the web server
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
