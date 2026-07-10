@@ -1,0 +1,6 @@
+{
+  "name": "GeoTasalia Web",
+  "description": "Portal corporativo de Geotasalia - Ingeniería Agrícola, Valoraciones Rústicas, Topografía y Enlaces Técnicos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
