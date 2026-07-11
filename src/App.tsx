@@ -960,7 +960,7 @@ export default function App() {
             {/* SERVICE CARD 1 */}
             <div 
               onClick={() => prefillService('Valoración Agrícola', 'Hola Jorge, solicito información y presupuesto detallado para la tasación oficial de una finca rústica o valoración de cultivo.')}
-              className="p-7 bg-gradient-to-b from-theme-bg-card to-theme-bg-root/60 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent/60 hover:shadow-xl hover:shadow-theme-accent/10 transition-all cursor-pointer group text-left animate-fade-in"
+              className="p-7 bg-gradient-to-br from-theme-bg-card via-theme-bg-card to-theme-bg-root/80 border-l-4 border-l-theme-accent/60 border border-theme-border-card/20 rounded-2xl hover:border-l-theme-accent hover:shadow-xl hover:shadow-theme-accent/15 transition-all cursor-pointer group text-left animate-fade-in"
             >
               <h3 className="text-base font-semibold text-theme-text group-hover:text-theme-accent transition-colors flex items-center gap-2">
                 <span className="h-1.5 w-1.5 bg-theme-accent rounded-full"></span>
@@ -977,7 +977,7 @@ export default function App() {
             {/* SERVICE CARD 2 */}
             <div 
               onClick={() => prefillService('Ingeniería Agrícola', 'Hola Jorge, necesito consultarte sobre un proyecto técnico de ingeniería agrícola (pozos, balsas de riego o naves).')}
-              className="p-7 bg-gradient-to-b from-theme-bg-card to-theme-bg-root/60 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent/60 hover:shadow-xl hover:shadow-theme-accent/10 transition-all cursor-pointer group text-left animate-fade-in"
+              className="p-7 bg-gradient-to-br from-theme-bg-card via-theme-bg-card to-theme-bg-root/80 border-l-4 border-l-theme-accent/60 border border-theme-border-card/20 rounded-2xl hover:border-l-theme-accent hover:shadow-xl hover:shadow-theme-accent/15 transition-all cursor-pointer group text-left animate-fade-in"
             >
               <h3 className="text-base font-semibold text-theme-text group-hover:text-theme-accent transition-colors flex items-center gap-2">
                 <span className="h-1.5 w-1.5 bg-theme-accent rounded-full"></span>
@@ -994,7 +994,7 @@ export default function App() {
             {/* SERVICE CARD 3 */}
             <div 
               onClick={() => prefillService('Topografía y Catastro', 'Hola Jorge, necesito realizar un levantamiento topográfico, deslinde o subsanación de discrepancias catastrales.')}
-              className="p-7 bg-gradient-to-b from-theme-bg-card to-theme-bg-root/60 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent/60 hover:shadow-xl hover:shadow-theme-accent/10 transition-all cursor-pointer group text-left animate-fade-in"
+              className="p-7 bg-gradient-to-br from-theme-bg-card via-theme-bg-card to-theme-bg-root/80 border-l-4 border-l-theme-accent/60 border border-theme-border-card/20 rounded-2xl hover:border-l-theme-accent hover:shadow-xl hover:shadow-theme-accent/15 transition-all cursor-pointer group text-left animate-fade-in"
             >
               <h3 className="text-base font-semibold text-theme-text group-hover:text-theme-accent transition-colors flex items-center gap-2">
                 <span className="h-1.5 w-1.5 bg-theme-accent rounded-full"></span>
