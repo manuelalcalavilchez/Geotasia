@@ -527,7 +527,7 @@ export default function App() {
             {/* Title & Stats */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-theme-border-card/30 pb-5">
               <div>
-                <h2 className="text-lg font-bold text-theme-text uppercase tracking-wider font-display flex items-center gap-2">
+                <h2 className="text-lg font-bold text-theme-accent uppercase tracking-wider font-display flex items-center gap-2">
                   <Inbox className="text-theme-accent" size={20} />
                   Bandeja de Entrada de Consultas
                 </h2>
@@ -828,7 +828,7 @@ export default function App() {
                     <Unlock size={14} className="text-emerald-500" />
                   )}
                 </div>
-                <h3 className="text-base font-semibold text-theme-text uppercase tracking-wider group-hover:text-theme-accent transition-colors">geovisor</h3>
+                <h3 className="text-base font-semibold text-theme-accent uppercase tracking-wider transition-colors">geovisor</h3>
                 <p className="text-xs text-theme-text-muted line-clamp-2">Visualización ágil de parcelación, linderos y cartografía catastral rústica.</p>
               </div>
               <div className="flex items-center justify-between text-xs text-theme-accent font-semibold pt-2">
@@ -859,7 +859,7 @@ export default function App() {
                     <Unlock size={14} className="text-emerald-500" />
                   )}
                 </div>
-                <h3 className="text-base font-semibold text-theme-text uppercase tracking-wider group-hover:text-theme-accent transition-colors">gestor de rutas</h3>
+                <h3 className="text-base font-semibold text-theme-accent uppercase tracking-wider transition-colors">gestor de rutas</h3>
                 <p className="text-xs text-theme-text-muted line-clamp-2">Planificación de salidas al campo, cálculo de distancias y logística técnica.</p>
               </div>
               <div className="flex items-center justify-between text-xs text-theme-accent font-semibold pt-2">
@@ -890,7 +890,7 @@ export default function App() {
                     <Unlock size={14} className="text-emerald-500" />
                   )}
                 </div>
-                <h3 className="text-base font-semibold text-theme-text uppercase tracking-wider group-hover:text-theme-accent transition-colors">visor urbanístico</h3>
+                <h3 className="text-base font-semibold text-theme-accent uppercase tracking-wider transition-colors">visor urbanístico</h3>
                 <p className="text-xs text-theme-text-muted line-clamp-2">Calificaciones de suelo rústico, planeamiento urbanístico municipal y ordenación.</p>
               </div>
               <div className="flex items-center justify-between text-xs text-theme-accent font-semibold pt-2">
@@ -921,7 +921,7 @@ export default function App() {
                     <Unlock size={14} className="text-emerald-500" />
                   )}
                 </div>
-                <h3 className="text-base font-semibold text-theme-text uppercase tracking-wider group-hover:text-theme-accent transition-colors">análisis registral</h3>
+                <h3 className="text-base font-semibold text-theme-accent uppercase tracking-wider transition-colors">análisis registral</h3>
                 <p className="text-xs text-theme-text-muted line-clamp-2">Buscador y verificación técnica de cargas, titularidades y fincas registrales.</p>
               </div>
               <div className="flex items-center justify-between text-xs text-theme-accent font-semibold pt-2">
@@ -1017,7 +1017,7 @@ export default function App() {
           {/* Brand Info Rail (4 cols) */}
           <div className="lg:col-span-4 space-y-6 flex flex-col justify-between text-left">
             <div className="space-y-4">
-              <h3 className="text-lg font-bold text-theme-text uppercase tracking-wider font-display">
+              <h3 className="text-lg font-bold text-theme-accent uppercase tracking-wider font-display">
                 Garantía de Privacidad
               </h3>
               
@@ -1073,7 +1073,7 @@ export default function App() {
           {/* Form Area (8 cols) */}
           <div className="lg:col-span-8 border border-theme-border-card/30 rounded-2xl bg-theme-bg-card/50 backdrop-blur-md shadow-lg p-6 md:p-8 space-y-6">
             <div>
-              <h3 className="text-lg font-bold text-theme-text uppercase tracking-wider font-display">
+              <h3 className="text-lg font-bold text-theme-accent uppercase tracking-wider font-display">
                 Formulario de Consulta Técnica
               </h3>
               <p className="text-xs text-theme-text-muted mt-1">
