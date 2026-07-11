@@ -475,7 +475,7 @@ export default function App() {
         </div>
         
         <p className="max-w-2xl mx-auto text-sm sm:text-base text-theme-text-muted font-light leading-relaxed">
-          Especialistas en tasaciones oficiales de fincas, dictámenes periciales rústicos, proyectos de regadío, topografía de precisión y análisis de viabilidad registral. Rigor técnico and confidencialidad en cada proyecto.
+          Especialistas en tasaciones oficiales de fincas, dictámenes periciales rústicos, proyectos de regadío, topografía de precisión y análisis de viabilidad registral. Rigor técnico y confidencialidad en cada proyecto.
         </p>
         
         {/* Action Directives / Contact buttons */}
@@ -814,7 +814,7 @@ export default function App() {
               }}
               target={userRole !== 'guest' ? "_blank" : undefined}
               rel="noopener noreferrer"
-              className="group p-5 bg-theme-bg-card/60 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent hover:bg-theme-bg-card/90 transition-all flex flex-col justify-between h-44 shadow-md text-left relative overflow-hidden cursor-pointer"
+              className="group p-6 bg-theme-bg-card/70 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent hover:bg-theme-bg-card shadow-lg hover:shadow-xl hover:shadow-theme-accent/10 transition-all flex flex-col justify-between h-48 text-left relative overflow-hidden cursor-pointer"
               id="external-link-geovisor"
             >
               <div className="space-y-2">
@@ -845,7 +845,7 @@ export default function App() {
               }}
               target={userRole !== 'guest' ? "_blank" : undefined}
               rel="noopener noreferrer"
-              className="group p-5 bg-theme-bg-card/60 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent hover:bg-theme-bg-card/90 transition-all flex flex-col justify-between h-44 shadow-md text-left relative overflow-hidden cursor-pointer"
+              className="group p-6 bg-theme-bg-card/70 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent hover:bg-theme-bg-card shadow-lg hover:shadow-xl hover:shadow-theme-accent/10 transition-all flex flex-col justify-between h-48 text-left relative overflow-hidden cursor-pointer"
               id="external-link-rutas"
             >
               <div className="space-y-2">
@@ -876,7 +876,7 @@ export default function App() {
               }}
               target={userRole !== 'guest' ? "_blank" : undefined}
               rel="noopener noreferrer"
-              className="group p-5 bg-theme-bg-card/60 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent hover:bg-theme-bg-card/90 transition-all flex flex-col justify-between h-44 shadow-md text-left relative overflow-hidden cursor-pointer"
+              className="group p-6 bg-theme-bg-card/70 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent hover:bg-theme-bg-card shadow-lg hover:shadow-xl hover:shadow-theme-accent/10 transition-all flex flex-col justify-between h-48 text-left relative overflow-hidden cursor-pointer"
               id="external-link-urbanismo"
             >
               <div className="space-y-2">
@@ -907,7 +907,7 @@ export default function App() {
               }}
               target={userRole !== 'guest' ? "_blank" : undefined}
               rel="noopener noreferrer"
-              className="group p-5 bg-theme-bg-card/60 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent hover:bg-theme-bg-card/90 transition-all flex flex-col justify-between h-44 shadow-md text-left relative overflow-hidden cursor-pointer"
+              className="group p-6 bg-theme-bg-card/70 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent hover:bg-theme-bg-card shadow-lg hover:shadow-xl hover:shadow-theme-accent/10 transition-all flex flex-col justify-between h-48 text-left relative overflow-hidden cursor-pointer"
               id="external-link-registro"
             >
               <div className="space-y-2">
@@ -960,7 +960,7 @@ export default function App() {
             {/* SERVICE CARD 1 */}
             <div 
               onClick={() => prefillService('Valoración Agrícola', 'Hola Jorge, solicito información y presupuesto detallado para la tasación oficial de una finca rústica o valoración de cultivo.')}
-              className="p-6 bg-gradient-to-b from-theme-bg-card to-theme-bg-root/40 border border-theme-border-card/20 rounded-2xl hover:border-theme-accent/30 hover:shadow-lg transition-all cursor-pointer group text-left animate-fade-in"
+              className="p-7 bg-gradient-to-b from-theme-bg-card to-theme-bg-root/60 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent/60 hover:shadow-xl hover:shadow-theme-accent/10 transition-all cursor-pointer group text-left animate-fade-in"
             >
               <h3 className="text-base font-semibold text-theme-text group-hover:text-theme-accent transition-colors flex items-center gap-2">
                 <span className="h-1.5 w-1.5 bg-theme-accent rounded-full"></span>
@@ -977,7 +977,7 @@ export default function App() {
             {/* SERVICE CARD 2 */}
             <div 
               onClick={() => prefillService('Ingeniería Agrícola', 'Hola Jorge, necesito consultarte sobre un proyecto técnico de ingeniería agrícola (pozos, balsas de riego o naves).')}
-              className="p-6 bg-gradient-to-b from-theme-bg-card to-theme-bg-root/40 border border-theme-border-card/20 rounded-2xl hover:border-theme-accent/30 hover:shadow-lg transition-all cursor-pointer group text-left animate-fade-in"
+              className="p-7 bg-gradient-to-b from-theme-bg-card to-theme-bg-root/60 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent/60 hover:shadow-xl hover:shadow-theme-accent/10 transition-all cursor-pointer group text-left animate-fade-in"
             >
               <h3 className="text-base font-semibold text-theme-text group-hover:text-theme-accent transition-colors flex items-center gap-2">
                 <span className="h-1.5 w-1.5 bg-theme-accent rounded-full"></span>
@@ -994,7 +994,7 @@ export default function App() {
             {/* SERVICE CARD 3 */}
             <div 
               onClick={() => prefillService('Topografía y Catastro', 'Hola Jorge, necesito realizar un levantamiento topográfico, deslinde o subsanación de discrepancias catastrales.')}
-              className="p-6 bg-gradient-to-b from-theme-bg-card to-theme-bg-root/40 border border-theme-border-card/20 rounded-2xl hover:border-theme-accent/30 hover:shadow-lg transition-all cursor-pointer group text-left animate-fade-in"
+              className="p-7 bg-gradient-to-b from-theme-bg-card to-theme-bg-root/60 border border-theme-border-card/30 rounded-2xl hover:border-theme-accent/60 hover:shadow-xl hover:shadow-theme-accent/10 transition-all cursor-pointer group text-left animate-fade-in"
             >
               <h3 className="text-base font-semibold text-theme-text group-hover:text-theme-accent transition-colors flex items-center gap-2">
                 <span className="h-1.5 w-1.5 bg-theme-accent rounded-full"></span>
@@ -1366,7 +1366,7 @@ export default function App() {
               <button
                 type="submit"
                 disabled={formSubmitted}
-                className="w-full py-3 bg-theme-accent hover:bg-theme-accent-hover text-theme-text-on-accent text-xs font-bold uppercase tracking-wider rounded-xl shadow-lg transition-all flex items-center justify-center gap-2"
+                className="w-full py-4 bg-theme-accent hover:bg-theme-accent-hover text-theme-text-on-accent text-sm font-bold uppercase tracking-widest rounded-xl shadow-xl transition-all flex items-center justify-center gap-3 border-2 border-theme-accent/60 hover:shadow-theme-accent/30 hover:scale-[1.02]"
               >
                 {formSubmitted ? (
                   <>
