@@ -292,3 +292,48 @@ body {
 }
 
 
+
+/* === MEJORAS VISUALES GLOBALES === */
+
+/* Placeholders tenues en todos los inputs */
+input::placeholder,
+textarea::placeholder {
+    color: rgba(148, 163, 184, 0.4) !important;
+    font-style: italic;
+  }
+
+/* Inputs con borde plateado */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    border-color: rgba(192, 200, 220, 0.4) !important;
+    background-color: rgba(4, 8, 20, 0.75) !important;
+    color: #e2e8f0 !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    border-color: rgba(200, 210, 235, 0.75) !important;
+    box-shadow: 0 0 0 2px rgba(192, 200, 220, 0.15);
+    outline: none;
+  }
+
+/* Tarjetas con borde plateado visible */
+.rounded-xl.border,
+.rounded-lg.border {
+    border: 1px solid rgba(192, 200, 220, 0.45) !important;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255,255,255,0.04);
+  }
+
+.rounded-xl.border:hover,
+.rounded-lg.border:hover {
+    border-color: rgba(210, 220, 240, 0.7) !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45), 0 0 20px rgba(192, 200, 220, 0.07);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  }
